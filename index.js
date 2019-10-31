@@ -149,8 +149,8 @@ function getCarInfoById(carsArray, id) {
 */
 function sortCarInventory(carsArray) {
   carsArray.sort(function(a, b){
-    var modelA= a.car_model;
-    var modelB= b.car_model;
+    let modelA= a.car_model;
+    let modelB= b.car_model;
     
     if(modelA < modelB){
         return -1;
@@ -176,7 +176,7 @@ function sortCarInventory(carsArray) {
 function getModelYears(carsArray) {
   const yearsArray= [];
   for(i=0; i < carsArray.length; i++){
-    var curYear= carsArray[i].car_year;
+    let curYear= carsArray[i].car_year;
     yearsArray.push(curYear);
   } //end for 
 
